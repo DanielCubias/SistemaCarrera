@@ -2,8 +2,9 @@
 
 
 def connexion():
+    
     import mysql.connector
-    mydb = mysql.connector.connect(
+    conn = mysql.connector.connect(
     host="localhost",
     user="root",
     port = 3307,
@@ -12,3 +13,4 @@ def connexion():
     )
 
     print("Conexion exitosamente")
+    return conn
